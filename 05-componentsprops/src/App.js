@@ -3,7 +3,7 @@ import Message from './Message'
 import Summary from './Summary'
 import ReactDom from 'react-dom'
 
-let names = ["Achuth", "Chenna", "Ranga", "TestUser"];
+let names = ["Achuth", "Chenna", "Ranga", "JamesBond"];
 
 let reverseNames = () => {
   names.reverse();
