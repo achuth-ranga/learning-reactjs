@@ -22,13 +22,14 @@ const App = () => <div>
   <Message name="Achuth" greeting="GoodMoring"></Message>
   <Message name="Bond" greeting={"Let's " + " Save the Wor"} ></Message>
   <Message name="Chenna" greeting="How are u?"></Message>
-  <table className="table table-striped table-responsive-lg">
-    <thead>
+  <table className="table table-striped table-bordered table-responsive-lg">
+    <thead className="thead-light">
       <tr>
         <th>#</th>
         <th>Name</th>
         <th>Letters</th>
         <th>Action</th>
+        <th>Promote</th>
       </tr>
     </thead>
     <tbody>
