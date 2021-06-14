@@ -1,5 +1,6 @@
 import React from 'react';
-import ActionButton from './ActionButton'
+import ActionButton from './ActionButton';
+import {HooksButton} from './HooksButton';
 
 let Summary = (props) => {
     if (props.name.length > 3) {
@@ -25,6 +26,13 @@ let Summary = (props) => {
                 <ActionButton 
                 callback={() => props.promoteCallback(props.name)}
                 disabled="true"></ActionButton>
+
+                <HooksButton
+                className="btn btn-info btn-sm m-1"
+                callback={ () => props.promoteCallback(props.name)}
+                text={ `Promote (${ props.name})`} 
+                ></HooksButton>
+
             </td>
         </React.Fragment>
     } else {
